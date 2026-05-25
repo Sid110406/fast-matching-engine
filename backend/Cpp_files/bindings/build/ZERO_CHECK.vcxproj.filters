@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\manu1\OneDrive\Desktop\MATCHING ENGINE\matching-engine\backend\app\bindings\build\CMakeFiles\5c36415b16f75a3f0e25284c71cfa3ca\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{93054DEF-0939-351A-96CB-630A3F2C1F52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

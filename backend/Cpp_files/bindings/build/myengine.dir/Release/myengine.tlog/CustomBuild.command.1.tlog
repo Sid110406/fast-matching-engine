@@ -1,0 +1,10 @@
+^C:\USERS\MANU1\ONEDRIVE\DESKTOP\MATCHING ENGINE\MATCHING-ENGINE\BACKEND\APP\BINDINGS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE/matching-engine/backend/app/bindings" "-BC:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE/matching-engine/backend/app/bindings/build" --check-stamp-file "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE/matching-engine/backend/app/bindings/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
