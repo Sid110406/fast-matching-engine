@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\manu1\OneDrive\Desktop\MATCHING ENGINE\matching-engine\backend\app\bindings\bindings.cpp">
+    <ClCompile Include="C:\Users\manu1\OneDrive\Desktop\MATCHING ENGINE UPDATED\backend\Cpp_files\bindings\bindings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\manu1\OneDrive\Desktop\MATCHING ENGINE\matching-engine\backend\app\bindings\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\manu1\OneDrive\Desktop\MATCHING ENGINE UPDATED\backend\Cpp_files\bindings\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{6114C479-3783-38CB-BE92-0C3AFB0861DA}</UniqueIdentifier>
+      <UniqueIdentifier>{70DF5D15-6077-327E-A492-A5D11498DA89}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

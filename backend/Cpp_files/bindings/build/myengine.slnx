@@ -7,7 +7,7 @@
 		<BuildType Name="RelWithDebInfo"/>
 		<Platform Name="x64"/>
 	</Configurations>
-	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d5042ec1-0ea1-3678-9f10-689eed4c535a" DefaultStartup="true">
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c3ce5675-b410-3d5d-ba9b-cb419bb13054" DefaultStartup="true">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 		<BuildDependency Project="myengine.vcxproj"/>
 		<Build Solution="Debug|*" Project="false"/>
@@ -15,8 +15,8 @@
 		<Build Solution="MinSizeRel|*" Project="false"/>
 		<Build Solution="RelWithDebInfo|*" Project="false"/>
 	</Project>
-	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e9d02021-4cb8-3dd5-ab03-c146b7bf2751"/>
-	<Project Path="myengine.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="52763adb-1e9f-3ad8-a271-f23fcbecd4d0">
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="72668dfc-7516-3295-bb90-ee42dc03275d"/>
+	<Project Path="myengine.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="77a56c3e-0c05-351c-a150-07243f8e154f">
 		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
 	</Project>
 </Solution>

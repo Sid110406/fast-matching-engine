@@ -1,6 +1,6 @@
-^C:\USERS\MANU1\ONEDRIVE\DESKTOP\MATCHING ENGINE\MATCHING-ENGINE\BACKEND\APP\BINDINGS\BUILD\CMAKEFILES\5C36415B16F75A3F0E25284C71CFA3CA\GENERATE.STAMP.RULE
+^C:\USERS\MANU1\ONEDRIVE\DESKTOP\MATCHING ENGINE UPDATED\BACKEND\CPP_FILES\BINDINGS\BUILD\CMAKEFILES\6EE866457CDFBB4F3860D5531B6612D3\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE/matching-engine/backend/app/bindings" "-BC:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE/matching-engine/backend/app/bindings/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE/matching-engine/backend/app/bindings/build/myengine.slnx"
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings" "-BC:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/myengine.slnx"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
