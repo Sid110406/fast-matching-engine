@@ -5,6 +5,7 @@
 
 OrderBook::OrderBook(const std::string& symbol){
     this->symbol = symbol; 
+    this->next_trade_sequence = 1; 
 }; 
 std::vector<Trade> OrderBook::add_limit_order(Order& order){ // this function also returns all the trades that happened; 
     std::lock_guard<std::mutex> lock(mtx); 
@@ -53,7 +54,7 @@ std::vector<Trade> OrderBook::match_buy_order(Order& order){
             assert(price > 0); 
             assert(order.get_order_id() != sell_order.get_order_id());
 
-        trades.emplace_back(Trade{order.get_order_id(), sell_order.get_order_id(), price, trade_quant}); 
+        trades.emplace_back(Trade{order.get_order_id(), sell_order.get_order_id(), price, trade_quant, next_trade_sequence++}); 
         sell_order.reduce_quantity(trade_quant); 
         order.reduce_quantity(trade_quant); 
         if(sell_order.is_filled()){
@@ -83,7 +84,7 @@ std::vector<Trade> OrderBook::match_sell_order(Order& order){
             assert(price > 0); 
             assert(order.get_order_id() != buy_order.get_order_id());
         
-        trades.emplace_back(Trade{buy_order.get_order_id(), order.get_order_id(), price, trade_quant}); 
+        trades.emplace_back(Trade{buy_order.get_order_id(), order.get_order_id(), price, trade_quant, next_trade_sequence++}); 
         buy_order.reduce_quantity(trade_quant); 
         order.reduce_quantity(trade_quant); 
         if(buy_order.is_filled()){
@@ -115,7 +116,7 @@ int OrderBook::best_sell_price() const {
     return sell_book.begin()->first;
 }
 
-bool OrderBook::cancel_order(unsigned long long order_id) {
+bool OrderBook::cancel_order(uint64_t order_id) {
     std::lock_guard<std::mutex> lock(mtx);
 
     if(order_index.find(order_id) == order_index.end()){

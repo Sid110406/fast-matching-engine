@@ -3,4 +3,5 @@ struct Trade{
     unsigned long long sell_order_id; 
     int price; 
     int quantity; 
+    unsigned long long trade_sequence; 
 }; 

@@ -1,5 +1,7 @@
 from fastapi import FastAPI
-from routes.order_routes import router
+from backend.app.routes.order_routes import router
+from backend.Cpp_files.bindings import myengine
 
-app = FastAPI()
-app.include_router(router)
+engine = myengine.MatchingEngine()
+
+print(myengine.Side.BUY)

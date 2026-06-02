@@ -82,7 +82,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 25-05-2026 20:46:33.
+      Build started 02-06-2026 22:48:16.
       
       Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\4.2.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -111,7 +111,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.55
+      Time Elapsed 00:00:00.53
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -774,7 +774,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-      Build started 25-05-2026 20:46:33.
+      Build started 02-06-2026 22:48:17.
       
       Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\4.2.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -803,7 +803,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.52
+      Time Elapsed 00:00:00.49
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1203,8 +1203,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3r6yud"
-      binary: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3r6yud"
+      source: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3tccjw"
+      binary: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3tccjw"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1213,39 +1213,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3r6yud'
+        Change Dir: 'C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3tccjw'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ca163.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d4a3b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 25-05-2026 20:46:34.
+        Build started 02-06-2026 22:48:17.
         
-        Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3r6yud\\cmTC_ca163.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tccjw\\cmTC_d4a3b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3r6yud\\Debug\\".
-          Creating directory "cmTC_ca163.dir\\Debug\\cmTC_ca163.tlog\\".
+          Creating directory "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tccjw\\Debug\\".
+          Creating directory "cmTC_d4a3b.dir\\Debug\\cmTC_d4a3b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ca163.dir\\Debug\\cmTC_ca163.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ca163.dir\\Debug\\cmTC_ca163.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d4a3b.dir\\Debug\\cmTC_d4a3b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d4a3b.dir\\Debug\\cmTC_d4a3b.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_ca163.dir\\Debug\\\\" /Fd"cmTC_ca163.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_d4a3b.dir\\Debug\\\\" /Fd"cmTC_d4a3b.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_ca163.dir\\Debug\\\\" /Fd"cmTC_ca163.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_d4a3b.dir\\Debug\\\\" /Fd"cmTC_d4a3b.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3r6yud\\Debug\\cmTC_ca163.exe" /INCREMENTAL /ILK:"cmTC_ca163.dir\\Debug\\cmTC_ca163.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3r6yud/Debug/cmTC_ca163.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3r6yud/Debug/cmTC_ca163.lib" /MACHINE:X64  /machine:x64 cmTC_ca163.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_ca163.vcxproj -> C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3r6yud\\Debug\\cmTC_ca163.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tccjw\\Debug\\cmTC_d4a3b.exe" /INCREMENTAL /ILK:"cmTC_d4a3b.dir\\Debug\\cmTC_d4a3b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3tccjw/Debug/cmTC_d4a3b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-3tccjw/Debug/cmTC_d4a3b.lib" /MACHINE:X64  /machine:x64 cmTC_d4a3b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_d4a3b.vcxproj -> C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tccjw\\Debug\\cmTC_d4a3b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ca163.dir\\Debug\\cmTC_ca163.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ca163.dir\\Debug\\cmTC_ca163.tlog\\cmTC_ca163.lastbuildstate".
-        Done Building Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3r6yud\\cmTC_ca163.vcxproj" (default targets).
+          Deleting file "cmTC_d4a3b.dir\\Debug\\cmTC_d4a3b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d4a3b.dir\\Debug\\cmTC_d4a3b.tlog\\cmTC_d4a3b.lastbuildstate".
+        Done Building Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3tccjw\\cmTC_d4a3b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.51
+        Time Elapsed 00:00:00.50
         
       exitCode: 0
   -
@@ -1285,8 +1285,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-pi1sdf"
-      binary: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-pi1sdf"
+      source: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-ucl9ct"
+      binary: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-ucl9ct"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1296,39 +1296,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-pi1sdf'
+        Change Dir: 'C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-ucl9ct'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ff01b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a024b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 25-05-2026 20:46:35.
+        Build started 02-06-2026 22:48:18.
         
-        Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1sdf\\cmTC_ff01b.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucl9ct\\cmTC_a024b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1sdf\\Debug\\".
-          Creating directory "cmTC_ff01b.dir\\Debug\\cmTC_ff01b.tlog\\".
+          Creating directory "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucl9ct\\Debug\\".
+          Creating directory "cmTC_a024b.dir\\Debug\\cmTC_a024b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ff01b.dir\\Debug\\cmTC_ff01b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ff01b.dir\\Debug\\cmTC_ff01b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a024b.dir\\Debug\\cmTC_a024b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a024b.dir\\Debug\\cmTC_a024b.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_ff01b.dir\\Debug\\\\" /Fd"cmTC_ff01b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_a024b.dir\\Debug\\\\" /Fd"cmTC_a024b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_ff01b.dir\\Debug\\\\" /Fd"cmTC_ff01b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_a024b.dir\\Debug\\\\" /Fd"cmTC_a024b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1sdf\\Debug\\cmTC_ff01b.exe" /INCREMENTAL /ILK:"cmTC_ff01b.dir\\Debug\\cmTC_ff01b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-pi1sdf/Debug/cmTC_ff01b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-pi1sdf/Debug/cmTC_ff01b.lib" /MACHINE:X64  /machine:x64 cmTC_ff01b.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_ff01b.vcxproj -> C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1sdf\\Debug\\cmTC_ff01b.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucl9ct\\Debug\\cmTC_a024b.exe" /INCREMENTAL /ILK:"cmTC_a024b.dir\\Debug\\cmTC_a024b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-ucl9ct/Debug/cmTC_a024b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-ucl9ct/Debug/cmTC_a024b.lib" /MACHINE:X64  /machine:x64 cmTC_a024b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_a024b.vcxproj -> C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucl9ct\\Debug\\cmTC_a024b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ff01b.dir\\Debug\\cmTC_ff01b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ff01b.dir\\Debug\\cmTC_ff01b.tlog\\cmTC_ff01b.lastbuildstate".
-        Done Building Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1sdf\\cmTC_ff01b.vcxproj" (default targets).
+          Deleting file "cmTC_a024b.dir\\Debug\\cmTC_a024b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a024b.dir\\Debug\\cmTC_a024b.tlog\\cmTC_a024b.lastbuildstate".
+        Done Building Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucl9ct\\cmTC_a024b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.50
+        Time Elapsed 00:00:00.48
         
       exitCode: 0
   -
@@ -4558,8 +4558,8 @@ events:
     checks:
       - "Performing Test HAS_MSVC_GL_LTCG"
     directories:
-      source: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-rqmd5u"
-      binary: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-rqmd5u"
+      source: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-o9fsn7"
+      binary: "C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-o9fsn7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -4568,47 +4568,47 @@ events:
       variable: "HAS_MSVC_GL_LTCG"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-rqmd5u'
+        Change Dir: 'C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-o9fsn7'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7641b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a8d8b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.3+84d3e95b4 for .NET Framework
-        Build started 25-05-2026 20:46:38.
+        Build started 02-06-2026 22:48:20.
         
-        Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\cmTC_7641b.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\cmTC_a8d8b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\Debug\\".
-          Creating directory "cmTC_7641b.dir\\Debug\\cmTC_7641b.tlog\\".
+          Creating directory "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\Debug\\".
+          Creating directory "cmTC_a8d8b.dir\\Debug\\cmTC_a8d8b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_7641b.dir\\Debug\\cmTC_7641b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_7641b.dir\\Debug\\cmTC_7641b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a8d8b.dir\\Debug\\cmTC_a8d8b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a8d8b.dir\\Debug\\cmTC_a8d8b.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_7641b.dir\\Debug\\\\" /Fd"cmTC_7641b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\src.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_a8d8b.dir\\Debug\\\\" /Fd"cmTC_a8d8b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36244 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_7641b.dir\\Debug\\\\" /Fd"cmTC_7641b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_a8d8b.dir\\Debug\\\\" /Fd"cmTC_a8d8b.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\Debug\\cmTC_7641b.exe" /INCREMENTAL /ILK:"cmTC_7641b.dir\\Debug\\cmTC_7641b.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-rqmd5u/Debug/cmTC_7641b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-rqmd5u/Debug/cmTC_7641b.lib" /MACHINE:X64  /machine:x64 cmTC_7641b.dir\\Debug\\src.obj
-        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\cmTC_7641b.vcxproj]
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\Debug\\cmTC_a8d8b.exe" /INCREMENTAL /ILK:"cmTC_a8d8b.dir\\Debug\\cmTC_a8d8b.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-o9fsn7/Debug/cmTC_a8d8b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/manu1/OneDrive/Desktop/MATCHING ENGINE UPDATED/backend/Cpp_files/bindings/build/CMakeFiles/CMakeScratch/TryCompile-o9fsn7/Debug/cmTC_a8d8b.lib" /MACHINE:X64  /machine:x64 cmTC_a8d8b.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\cmTC_a8d8b.vcxproj]
           Generating code
           Finished generating code
-          cmTC_7641b.vcxproj -> C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\Debug\\cmTC_7641b.exe
+          cmTC_a8d8b.vcxproj -> C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\Debug\\cmTC_a8d8b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_7641b.dir\\Debug\\cmTC_7641b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_7641b.dir\\Debug\\cmTC_7641b.tlog\\cmTC_7641b.lastbuildstate".
-        Done Building Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\cmTC_7641b.vcxproj" (default targets).
+          Deleting file "cmTC_a8d8b.dir\\Debug\\cmTC_a8d8b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a8d8b.dir\\Debug\\cmTC_a8d8b.tlog\\cmTC_a8d8b.lastbuildstate".
+        Done Building Project "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\cmTC_a8d8b.vcxproj" (default targets).
         
         Build succeeded.
         
-        "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\cmTC_7641b.vcxproj" (default target) (1) ->
+        "C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\cmTC_a8d8b.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqmd5u\\cmTC_7641b.vcxproj]
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\manu1\\OneDrive\\Desktop\\MATCHING ENGINE UPDATED\\backend\\Cpp_files\\bindings\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o9fsn7\\cmTC_a8d8b.vcxproj]
         
             1 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.58
+        Time Elapsed 00:00:00.52
         
       exitCode: 0
 ...

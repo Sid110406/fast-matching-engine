@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from enum import Enum
-from models.trade import Trade
+from ..models.trade import Trade
 
 class Side(str, Enum): 
     BUY = "BUY"

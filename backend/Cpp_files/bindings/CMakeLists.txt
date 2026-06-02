@@ -16,4 +16,9 @@ set(pybind11_DIR
 
 find_package(pybind11 REQUIRED)
 
-pybind11_add_module(myengine bindings.cpp)
+pybind11_add_module(myengine
+    bindings.cpp
+    ../core/MatchingEngine.cpp
+    ../core/OrderBook.cpp
+    ../core/Order.cpp
+)

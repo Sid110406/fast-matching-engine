@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include <string>
 #include<shared_mutex> 
+#include<memory> 
 #include "Order.h"
 #include "OrderBook.h"
 
@@ -10,12 +11,12 @@ public:
     MatchingEngine() = default; 
     std::vector<Trade> submit_limit_order(Order& order); 
     std::vector<Trade> submit_market_order(Order& order); 
-    bool cancel_order(const std::string& symbol, unsigned long long order_id); 
+    bool cancel_order(const std::string& symbol, uint64_t order_id); 
     int best_buy_price(const std::string& symbol) const; 
     int best_sell_price(const std::string& symbol) const; 
 
     private: 
-    std::unordered_map<std::string, OrderBook> books; // contains the orderBook of each of the symbol   
+    std::unordered_map<std::string, std::unique_ptr<OrderBook>> books; // contains the orderBook of each of the symbol   
     // problem -- what if 2 threads simulatenously call this get_or_create_book() for the same symbol 2 same books will get created twice race_condition; 
 
     // will fix this by another mutex for the books; 

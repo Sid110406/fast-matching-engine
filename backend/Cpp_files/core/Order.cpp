@@ -1,18 +1,17 @@
 #include "Order.h"
 
-Order::Order(unsigned long long order_id, std::string symbol, Side side, OrderType type, int price, int quantity, unsigned long long sequence_number){
+Order::Order(uint64_t order_id, std::string symbol, Side side, OrderType type, int price, int quantity){
     this->order_id = order_id; 
     this->symbol = symbol; 
     this->side = side; 
     this->type = type; 
     this->price = price; 
     this->original_quantity = quantity; 
-    this->remaining_quantity = quantity; 
-    this->sequence_number = sequence_number; 
+    this->remaining_quantity = quantity;  
 }
 
 //accessor
-unsigned long long Order::get_order_id() const{
+uint64_t Order::get_order_id() const{
     return this->order_id; 
 }
 
@@ -40,9 +39,6 @@ int Order::get_remaining_quantity() const {
     return this->remaining_quantity;
 }
 
-unsigned long long Order::get_sequence_number() const {
-    return this->sequence_number;
-}
 
 // functions : 
 
