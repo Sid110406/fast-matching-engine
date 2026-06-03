@@ -58,3 +58,12 @@ int MatchingEngine::best_sell_price(const std::string& symbol) const{
     }
     return (it->second)->best_sell_price(); 
 }
+
+bool MatchingEngine::book_exsits(const std::string& symbol) const{
+    std::shared_lock<std::shared_mutex> read_lock(map_rw_mutex); 
+    auto it = books.find(symbol); 
+    if(it == books.end()){
+        return false; 
+    }
+    return true; 
+}
