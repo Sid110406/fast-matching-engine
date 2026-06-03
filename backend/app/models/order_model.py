@@ -20,4 +20,6 @@ class OrderRequest(BaseModel):
 
 class OrderResponse(BaseModel): 
     status : str 
+    order_id : int 
     trades : list[Trade]
+

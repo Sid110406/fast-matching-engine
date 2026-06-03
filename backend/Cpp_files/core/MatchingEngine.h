@@ -16,6 +16,8 @@ public:
     int best_sell_price(const std::string& symbol) const;
     bool book_exists(const std::string& symbol) const; 
 
+    std::vector<std::string> get_symbols() const; 
+
     private: 
     std::unordered_map<std::string, std::unique_ptr<OrderBook>> books; // contains the orderBook of each of the symbol   
     // problem -- what if 2 threads simulatenously call this get_or_create_book() for the same symbol 2 same books will get created twice race_condition; 

@@ -1,5 +1,7 @@
 from fastapi import APIRouter
 from ..models import order_model
+from ..models import cancel_model
+from ..models import book_model
 from ..utils import order_validate
 from ..services.order_service import *
 from ..utils.snowflake_order_id_generator import generate_order_id
@@ -13,7 +15,33 @@ def submit_order(order : order_model.OrderRequest):
     cppOrder = create_order(order_id, order.symbol, order.side, order.ordertype, order.price, order.quantity)
     trades = process_order(cppOrder)
     return{
-        "status" : "Succesfully added the order", 
+        "status" : "Succesfully added the order",
+        "order_id" : order_id,  
         "trades" : trades
     } 
+
+@router.post("/cancel", response_model= cancel_model.CancelResponse)
+def cancel_order_endpoint(request : cancel_model.CancelRequest): 
+    return cancel_order(request.symbol, request.order_id)
+
+@router.get("/book/{symbol}/best_buy_price", response_model= book_model.BookBestBuyResponse)
+def book_best_buy_price(symbol : str): 
+    symbol = symbol.strip()
+    symbol = symbol.upper()
+    price = get_book_best_buy(symbol)
+    return{
+        "symbol" : symbol, 
+        "best_buy_price" : price
+    }
+
+@router.get("/book/{symbol}/best_sell_price", response_model= book_model.BookBestSellResponse)
+def book_best_sell_price(symbol : str): 
+    symbol = symbol.strip()
+    symbol = symbol.upper()
+    price = get_book_best_sell(symbol)
+    return{
+        "symbol" : symbol, 
+        "best_sell_price" : price
+    }
+
     

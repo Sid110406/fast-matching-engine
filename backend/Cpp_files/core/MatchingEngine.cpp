@@ -67,3 +67,12 @@ bool MatchingEngine::book_exists(const std::string& symbol) const{
     }
     return true; 
 }
+
+std::vector<std::string> MatchingEngine::get_symbols() const{
+    std::shared_lock<std::shared_mutex> read_lock(map_rw_mutex); 
+    std::vector<std::string> symbols;
+    for (const auto& it : books) {
+        symbols.push_back(it.first);
+    }
+    return symbols;
+}

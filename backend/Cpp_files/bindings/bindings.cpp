@@ -28,7 +28,8 @@ PYBIND11_MODULE(myengine, m)
     .def("cancel_order", &MatchingEngine::cancel_order)
     .def("best_buy_price", &MatchingEngine::best_buy_price)
     .def("best_sell_price", &MatchingEngine::best_sell_price)
-    .def("book_exists", &MatchingEngine::book_exists); 
+    .def("book_exists", &MatchingEngine::book_exists)
+    .def("get_symbols", &MatchingEngine::get_symbols); 
 
     py::class_<Order>(m, "Order")
     .def(py::init<uint64_t, std::string, Side, OrderType, int, int>())
