@@ -20,9 +20,10 @@ def submit_order(order : order_model.OrderRequest):
         "trades" : trades
     } 
 
-@router.post("/cancel", response_model= cancel_model.CancelResponse)
-def cancel_order_endpoint(request : cancel_model.CancelRequest): 
-    return cancel_order(request.symbol, request.order_id)
+@router.delete("/order/{symbol}/{order_id}", response_model= cancel_model.CancelResponse)
+def cancel_order_endpoint(symbol : str, order_id : int):
+    symbol = symbol.upper().strip()
+    return cancel_order(symbol, order_id)
 
 @router.get("/book/{symbol}/best_buy_price", response_model= book_model.BookBestBuyResponse)
 def book_best_buy_price(symbol : str): 
