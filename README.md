@@ -1,150 +1,344 @@
-# Thread-Safe Matching Engine (C++)
+# Fast Matching Engine
 
-This project implements an **exchange-style matching engine** in C++, focusing on **correctness, data structures, thread safety, and clean object-oriented design**.  
+A high-performance **electronic trading matching engine** built in **Modern C++** with a **FastAPI** backend. The project simulates the core functionality of a real-world exchange by maintaining independent order books for multiple symbols and matching orders using **Price-Time Priority (FIFO)**.
 
-
----
-
-##  Features
-
-- Limit and market order matching
-- Price–time priority (FIFO at each price level)
-- Multi-symbol order books
-- Efficient order cancellation using an order index
-- Thread-safe core using mutex-based RAII
+The matching engine is written entirely in C++ for performance, while Python bindings expose the engine through REST APIs.
 
 ---
 
-##  Design Overview (Initial try  )
+# Features
 
-### Core Components
-
-- **Order**
-  - Represents a single order with side, price, quantity, and sequence number
-  - Encapsulates order state and quantity updates
-
-- **OrderBook**
-  - Manages buy and sell orders for a single symbol
-  - Uses ordered maps and FIFO queues to enforce price–time priority
-  - Protected by a mutex for safe shared access
-  - Supports O(1) cancellation using an auxiliary order index
-
-- **MatchingEngine**
-  - Manages multiple order books (one per symbol)
-  - Routes orders to the appropriate order book
-  - Designed to be safely accessed from multiple threads
-
-- **CLI**
-  - Provides an interactive interface to submit and manage orders
-  - Keeps input/output logic separate from core matching logic
+* High-performance C++ matching engine
+* Price-Time Priority (FIFO) matching
+* Limit Order support
+* Market Order support
+* Multi-symbol order books
+* Fast order cancellation
+* Best Bid / Best Ask retrieval
+* Thread-safe order processing
+* FastAPI REST APIs
+* Python bindings using pybind11
+* Snowflake-style Order ID generation
+* Modular backend architecture
 
 ---
 
-## Thread Safety
+# Tech Stack
 
-- Each order book is protected by a mutex
-- Mutexes are managed using **RAII** (`std::lock_guard`) to ensure exception-safe locking
-- The engine is designed to support safe access from multiple threads and can be extended for network-based clients
+### Core Engine
 
----
+* C++17
+* STL
+* Mutex
+* Shared Mutex
+* CMake
 
-##  Supported Commands
+### Backend
 
-LIMIT |symbol| |BUY/SELL| |price| |quantity|
+* FastAPI
+* Python
+* Pydantic
+* Uvicorn
 
-MARKET |symbol| |BUY|SELL| |quantit|
+### Bindings
 
-CANCEL |symbol| |order_id|
-
-BEST_BID |symbol|
-
-BEST_ASK |symbol|
-
-EXIT
-
-### Example
-LIMIT AAPL BUY 100 10
-
-LIMIT AAPL SELL 100 5
-
-BEST_BID AAPL
-
-BEST_ASK AAPL
+* pybind11
 
 ---
 
-##  Build Instructions
-
-### Requirements
-- C++17 or later
-- CMake (≥ 3.10)
-
-### Build
-```bash
-mkdir build
-cd build
-cmake ..
-cmake --build .
-./matching_engine
-```
-
-### Benchmark Observation
-
-While benchmarking the system, I noticed that the **multi-thread version is 2 - 4 times faster than the single-thread version**.
-When the number of threads is approximately equal to the number of symbols (low contention), the system exhibits near-linear scaling, achieving up to ~x× speedup for x symbols.
-Under contention (multiple threads targeting the same symbol), performance degrades, and the speedup reduces to approximately ~2×, due to lock contention within the same OrderBook.
-
-Example result:
+# Architecture
 
 ```
-Single thread
-ORDERS : 10000000
-TIME : 8.52237
-THROUGHPUT : 1.17338e+06
-
-Multi thread
-THREADS : 4
-SYMBOLS : 4
-ORDERS : 4000000
-TIME : 0.87488
-THROUGHPUT : 4.57206e+06
+                REST API
+                  │
+             FastAPI Backend
+                  │
+          Python Service Layer
+                  │
+          pybind11 Bindings
+                  │
+      C++ Matching Engine Core
+                  │
+        Independent Order Books
 ```
 
-After investigating this, I found that the main reason is the use of **`string` symbols with `unordered_map` lookups**.
-Each order requires:
+---
 
-* hashing the symbol string
-* performing a map lookup
-* doing string comparisons
+# Matching Logic
 
-This creates extra overhead, and in the multi-thread version multiple threads access the same hash table, which increases memory contention.
+The engine follows the same matching strategy used by modern exchanges.
 
-To fix this, the engine will switch to using **integer `symbol_id` values** internally and store the order books in a `vector<OrderBook>`.
-This removes string hashing and map lookups from the hot path.
+### Buy Orders
 
-### IMPROVED DESIGN -- (OPTIMIZING AND LEARNING FROM THE BENCHMARKS RESULTS)
+Priority:
 
-## Project Status
+1. Highest Price
+2. Earliest Timestamp
 
-Core matching engine: ✅ Complete
+### Sell Orders
 
-Thread-safe design: ✅ Implemented
+Priority:
 
-CLI interface: ✅ Complete
+1. Lowest Price
+2. Earliest Timestamp
 
-Networking support: ⏳ In progress
+This guarantees **Price-Time Priority (FIFO)**.
 
-Persistence (WAL / recovery): ⏳ Planned
+---
+
+# Project Structure
+
+```
+backend/
+│
+├── app/
+│   ├── routes/
+│   ├── services/
+│   ├── models/
+│   ├── utils/
+│   ├── engine/
+│   └── main.py
+│
+└── Cpp_files/
+    ├── core/
+    │   ├── MatchingEngine.cpp
+    │   ├── OrderBook.cpp
+    │   ├── Order.cpp
+    │   └── ...
+    │
+    └── bindings/
+        ├── bindings.cpp
+        └── CMakeLists.txt
+```
+
+---
+
+# Order Book Design
+
+Each trading symbol maintains its own independent order book.
+
+The order book stores:
+
+* Buy Orders
+* Sell Orders
+* Order Index for O(1) cancellation
+
+Buy side:
+
+```
+Highest Price
+     ↓
+FIFO Queue
+```
+
+Sell side:
+
+```
+Lowest Price
+     ↓
+FIFO Queue
+```
+
+---
+
+# Thread Safety
+
+The engine is designed for concurrent environments.
+
+Features include:
+
+* Per-order-book mutex for sequential order processing
+* Shared mutex for safe access to multiple order books
+* Independent locking for different trading symbols
+
+This allows multiple symbols to be processed concurrently while preserving correctness.
+
+---
+
+# Order Processing Flow
+
+```
+Client
+
+   │
+
+POST /order
+
+   │
+
+FastAPI
+
+   │
+
+Validation
+
+   │
+
+Generate Order ID
+
+   │
+
+Python Bindings
+
+   │
+
+C++ Matching Engine
+
+   │
+
+Trades Generated
+
+   │
+
+REST Response
+```
+
+---
+
+# REST APIs
+
+## Submit Order
+
+```
+POST /order
+```
+
+Submits either a Market or Limit order.
+
+---
+
+## Cancel Order
+
+```
+DELETE /order/{symbol}/{order_id}
+```
+
+Cancels an active order.
+
+---
+
+## Best Buy Price
+
+```
+GET /book/{symbol}/best_buy_price
+```
+
+Returns the highest bid currently available.
+
+---
+
+## Best Sell Price
+
+```
+GET /book/{symbol}/best_sell_price
+```
+
+Returns the lowest ask currently available.
+
+---
+
+## Available Order Books
+
+```
+GET /orderbook/symbols
+```
+
+Returns all symbols currently maintained by the engine.
+
+---
+
+# Design Highlights
+
+* Modular architecture separating matching logic from APIs
+* Efficient price-level organization using ordered STL containers
+* Constant-time order cancellation using indexed order locations
+* Clean separation between engine, service layer, and REST interface
+* Extensible design suitable for adding persistence, authentication, and additional order types
+
+---
+
+## Performance Benchmark
+
+The matching engine was benchmarked under both single-threaded and multi-threaded workloads to evaluate throughput and scalability.
+
+### Benchmark Results
+
+```text
+Single Thread
+
+Orders Processed : 10,000,000
+Execution Time   : 8.52 s
+Throughput       : 1.17 Million Orders/sec
 
 
+Multi Thread
 
-##  What I Learned
+Threads          : 4
+Symbols          : 4
+Orders Processed : 4,000,000
+Execution Time   : 0.875 s
+Throughput       : 4.57 Million Orders/sec
+```
 
-- Designing thread-safe systems using mutex-based RAII  
-- Applying object-oriented design principles in a non-trivial C++ system  
-- Using STL containers to maintain ordering and performance guarantees  
-- Structuring a codebase for extensibility and future features  
+### Observations
+
+* The multi-threaded implementation achieved approximately **2–4× higher throughput** than the single-threaded version.
+* When different threads process different trading symbols (low contention), the engine demonstrates near-linear scalability because each `OrderBook` can be processed independently.
+* When multiple threads operate on the same symbol, throughput decreases due to lock contention on the corresponding `OrderBook`.
+
+###
+
+## Performance Characteristics
+
+| Feature | Complexity |
+|----------|------------|
+| Order Matching | O(log P + T) |
+| Order Insertion | O(log P) |
+| Order Cancellation | O(1) |
+| Best Bid / Ask | O(1) |
+| Multi-Symbol Processing | Parallel |
+| Matching Policy | Price-Time Priority (FIFO) |
+
+Where:
+- **P** = Number of price levels
+- **T** = Number of trades generated by the incoming order
 
 
+# Future Improvements
 
+Planned enhancements include:
 
+* User authentication (JWT)
+* MySQL integration
+* Persistent order history
+* Portfolio management
+* Trade history
+* Market depth visualization
+* Benchmarking and stress testing
+
+---
+
+# Learning Outcomes
+
+This project demonstrates practical knowledge of:
+
+* Order matching algorithms
+* Price-Time Priority
+* Exchange architecture
+* Modern C++
+* Multithreading and synchronization
+* Data structures for low-latency systems
+* FastAPI backend development
+* Python-C++ interoperability using pybind11
+* REST API design
+
+---
+
+# Author
+
+**Siddharth Arora**
+
+B.Tech Computer Science
+Indian Institute of Information Technology, Guwahati
+
+If you found this project interesting, consider giving it a ⭐.
